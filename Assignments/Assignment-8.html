@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-8</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        #container{
+            margin: 0px auto;
+            padding-right: 10px ;
+            padding-left:10px ;
+        }
+        #header{
+            width: 100%;
+        }
+        
+        #header ul{
+            width:100%;
+            background-color:rgb(97, 53, 0);
+            margin: 0px auto;
+            padding: 0px;
+            overflow: hidden;
+            padding:15px 45px;
+            position: fixed;
+            top: 0px;
+            z-index: 3;
+        }
+        #header ul li {
+            display: inline-block;
+            margin-left: 43px;
+        }
+        #header ul li a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            padding:10px 25px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        #header ul li a:hover{
+            background-color: white;
+            color: black;
+            transition: 1s;
+        }
+        #banner{
+            width: 100%;
+            height: 650px;
+            margin-top: 40px;
+        }
+        #banner h1{
+            position: relative;
+            top: 70px;
+            left: 10px;
+            text-transform: uppercase;
+            color: white;
+            font-size: 60px;
+        }
+        #text{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #team{
+            height:380px;
+            text-align: center;     
+            margin-top: 270px;
+        }
+        #circle{
+            margin-left:15px;
+            margin-right: 10px;
+            margin-top: 40px;
+            width: 270px;
+            height: 270px;
+            border-radius: 50%;
+            float: left;
+        }
+
+        #aboutUs{
+            height:650px;
+            text-align: center;
+            margin-top: 100px;
+        }
+        
+        #mainContent{
+            margin-top: 15px;
+            width: 49%;
+            background-color:rgb(97, 53, 0);
+            height: 575px;
+            float: left;
+            margin-right: 1%;
+            color: white; 
+            text-align: justify;
+            padding: 5px;
+        }
+        #artical{
+            display: flex;
+            flex-direction: column;
+            height: 548px;
+            width: 49%;
+        }
+        #artical img{
+            /* margin-top: 15px; */
+            width: 100%;
+            height: 176px;
+            position: relative;
+            bottom: 12px;
+            z-index: 1;
+        }
+        #artical h2{
+            position: relative;
+            top: 20px;
+            z-index: 2;
+        }
+        #tech{
+            text-align: center;
+            margin-top: 100px;
+            
+        }
+        #boxLink{
+            display: block;
+            width: 100%;
+            height: 30px;
+            border-radius: 6px;
+            background-color:rgb(97, 53, 0);
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+        #boxLink:hover{
+            background-color:blue;
+            color:white;
+            transition: 1s;
+        }
+        .box{
+            width: 22%;
+            margin: 20px 12px;
+            float: left;
+            height: 400px;
+            background-color: white;
+            border-radius: 3%;
+            padding: 5px;
+            box-shadow: 3px 3px 5px teal;
+            margin-bottom: 100px;
+        }
+        .box:hover{
+            background-color: black;
+            transition: 2s;
+            color: white;
+        }
+        #boxImg{
+            width: 100%;
+            height: 35%;
+            border-radius: 3%;
+            margin-bottom: 8px;
+        }
+        #boxText{
+            height: 140px;
+            text-align: justify;
+        }
+        #contact{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #footer{
+            width: 100%;
+            height: 90px;
+            background-color:rgba(97, 53, 0, 0.726);
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 20px;
+        }
+            
+    </style>
+</head>
+<body>
+        
+        <div id="header">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#team1">Team</a></li>
+                <li><a href="#tech1">Technologies</a></li>
+                <li><a href="#contact1">Contact</a></li>
+            </ul>
+        </div>
+        
+    <div id="container">  
+        <a name="home"></a>   
+        <div id="banner" >
+                <h1>Practical-8</h1>
+                <img src="../images/banner.jpg" alt="Banner" style="width: 100%; display: block; margin-left: auto; margin-right: auto;" >
+        </div>
+        <a name="team1"></a>
+        <div id="team">
+             <p id="text"> Team Members </p>
+            <img id="circle" src="../images/pic1.png" alt="pic1">
+            <img id="circle" src="../images/pic2.png" alt="pic2">
+            <img id="circle" src="../images/pic3.png" alt="pic3">
+            <img id="circle" src="../images/pic4.png" alt="pic4">
+        </div>
+        <a name="about"></a>
+        <div id="aboutUs">
+            <p id="text" style="margin-bottom: 20px;"> About Us </p>
+            <div id="mainContent"><h3>About Projects</h3><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore rerum magnam id accusantium excepturi, in sed, similique et ducimus explicabo asperiores suscipit doloremque. Quia eaque quis veritatis. Animi, laborum! Eius optio vel necessitatibus autem, fugiat a ipsam tempora at nulla aperiam, natus expedita adipisci quia voluptate consequatur porro soluta ut ratione sint illo dignissimos. Sit laboriosam numquam delectus, itaque corporis id fugit totam animi quae ducimus adipisci, aperiam minima facere facilis cumque eligendi accusamus iusto consequatur molestias? Quisquam, eius. Aut voluptates exercitationem aperiam soluta reprehenderit ea veniam, eaque quas, dicta inventore vero. Dignissimos est iure magnam, libero laboriosam eligendi saepe commodi doloremque, consectetur id ad necessitatibus natus esse quasi at rerum. Distinctio neque repudiandae culpa rerum alias consequuntur, aliquid, qui error placeat odit temporibus ipsa dolorum dolor est eveniet enim. Consequuntur eaque provident soluta temporibus ullam molestias non ipsa sint nesciunt asperiores. A beatae natus quae. Ad numquam id deserunt maxime quo commodi minima amet impedit non officia repellat hic sequi facere maiores cum vel, perferendis repellendus eos quisquam unde deleniti ducimus veritatis voluptatibus sapiente! Tempora quia laborum cupiditate aspernatur quo, officiis pariatur veniam sunt dolore vel laboriosam porro, perferendis rem praesentium! Tempora reiciendis unde in quidem iusto repudiandae recusandae numquam excepturi, non voluptatibus at magni ad. Doloremque, amet sit nihil fugiat animi sint quos enim ex praesentium aliquam pariatur voluptas expedita tempora. Natus voluptatum, tenetur, nemo optio odio rem voluptates, quibusdam doloremque pariatur minus earum dolore totam molestias excepturi repellendus a accusamus iste. Repudiandae tempore consectetur inventore quod sint fugiat incidunt nesciunt iusto consequuntur nam cumque, ut repellat laudantium adipisci doloremque facere, veritatis possimus molestiae quam vitae modi? Dolorum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus obcaecati repellendus labore ratione sequi exercitationem alias fugit. Dolorem, quod quibusdam?
+            </div>
+            <div id="artical">
+            <h2>Project-1</h2>
+            <img src="../images/p1.jpg"  alt="">  
+            <h2>Project-2</h2>
+            <img src="../images/p3.jpg"  alt="">
+            <h2>Project-3</h2>
+            <img src="../images/p2.jpeg" alt="">
+            </div> 
+        </div> 
+        <a name="tech1"></a>
+        <div id="tech">
+            <p id="text">Technologies Used</p><br><br>
+            <div class="box" id="first"> <img id="boxImg" src="../images/html_512x287.png" alt="Html_image"> <h3>  Introduction to HTML </h3><br> <p id="boxText">Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser.HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p> <a id="boxLink" href="Assignment-5_html.html" target="_blank">Read More</a> </div>
+            <div class="box" id="sec"><img id="boxImg" src="../images/css.png" alt="CSS_image">
+                <h3>  Introduction to CSS </h3><br><p id="boxText">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p> <a id="boxLink" href="Assignment-5_css.html" target="_blank">Read More</a></div>
+            <div class="box" id="third"><img id="boxImg" src="../images/javascript.jpg" alt="javascript">
+                <h3>  Introduction to Javascript </h3><br> <p id="boxText">JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.Alongside HTML, CSS and JavaScript </p><a id="boxLink" href="Assignment-5_js.html"target="_blank">Read More</a> </div>
+            <div class="box" id ="fourth"><img id="boxImg" src="../images/bootstrap_512x287.png" alt="bootstrap">
+                <h3>  Introduction to bootstrap </h3> <br> <p id="boxText">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation .</p> <a id="boxLink" href="Assignment-5_boot.html"target="_blank">Read More</a> </div>
+        </div>
+        <div id="contact">
+            <p id="text">Contact</p></div>
+            <div id="footer">
+                <p>Website template for Practical-8 &copy; <a href="tel: 7300743233">Call Me</a> </p> 
+                <a href="https://www.instagram.com/mayank.goyal_/" target="_blank"><img src="../images/instaIcon2.png" alt="Instagram"></a> <br>
+                <a href="#top">Back to Top</a>
+            </div>
+            <a name="contact1"></a>
+    </div>
+</body>
+</html>
