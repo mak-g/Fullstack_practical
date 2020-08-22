@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-9</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html{
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        .header{
+            position:fixed;
+            top: 0;
+            width: 100%;
+            height: 80px;
+            background-color: royalblue;
+            display: flex;
+            justify-content:space-evenly;
+            align-content: center;
+        }
+        .menu{
+            list-style: none;
+            text-align: center;
+        }
+        .menu li{
+            display: inline-block;
+            line-height: 80px;
+        }
+        .menu li a{
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            width: 200px;
+            font-size: 25px;
+            transition: 1s;
+        }
+        .menu li a:hover{
+            background-color: white;
+            color: black;
+        }
+        #text{
+            font-size: 40px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .banner{
+            height: 650px;
+            margin-top: 100px;
+            overflow: hidden;
+            background-image: url(../images/banner3.jpg);
+            margin-bottom: 100px;
+            background-size: 100% 100%;
+        }
+        .banner h1{
+            text-transform: uppercase;
+            font-size: 50px;
+            color: white;
+        }
+        .team{
+            height: 400px;
+            margin-bottom: 80px;
+        }
+        .team .circle{
+            border-radius: 50%;
+            height: 280px;
+            width: 280px;
+            float: left;
+            margin: 50px 10px;
+            overflow: hidden;
+        }
+        .circle img{
+            width: 100%;
+        }
+        .about{
+            height: 600px;
+            overflow: hidden;
+            margin-bottom: 80px;
+            padding: 0px 3px;
+        }
+        .about .mainContent{
+            margin-top: 20px;
+            width: 49.5%;
+            height: 100%;
+            background-color:lightskyblue;
+            text-align: justify;
+            padding: 0px 5px;
+            margin-right: 0.5%;
+            float: left;
+        }
+        .mainContent h3{
+            margin-bottom: 15px;
+        }
+        .about .artical{
+            width: 50%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .artical #block1{
+            height: 170px;
+            margin-bottom: 12px;
+            background-image: url(../images/p3.jpg);
+			background-size: 100% 100%;            
+        }
+        .artical #block2{
+            height: 170px;
+            margin-bottom: 12px;
+            background-image: url(../images/p2.jpeg);
+			background-size: 100% 100%;            
+        }
+
+        .artical #block3{
+            height: 170px;
+            margin-bottom: 12px;
+            background-image: url(../images/p1.jpg);
+			background-size: 100% 100%;            
+        }
+        .artical h2 {
+            text-align: center;    
+        }
+        .tech{
+            height: 550px;
+            text-align: center;
+            padding: 0px 10px;
+            overflow: hidden;
+        }
+        .tech .box{
+            width: 23.5%;
+            margin: 40px 8px;
+            float: left;
+            height: 410px;
+            background-color:lightskyblue;
+            border-radius: 3%;
+            padding: 5px;
+            box-shadow: 3px 3px 5px teal;
+        }
+        .tech .box:hover{
+            background-color: black;
+            transition: 2s;
+            color: white;
+        }
+        .box #boxImg{
+            width: 100%;
+            height: 35%;
+            border-radius: 3%;
+            margin-bottom: 8px;
+        }
+        .box #boxText{
+            height: 140px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .box #boxLink{
+            display: block;
+            width: 100%;
+            height: 40px;
+            border-radius: 6px;
+            background-color:red;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            line-height: 40px;
+        }
+        .box #boxLink:hover{
+            background-color:blue;
+            color:white;
+            transition: 1s;
+        }
+
+        .contact{
+            height: 150px;
+            
+        }
+        .contact #footer{
+            width: 100%;
+            
+            background-color:lightskyblue;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#tech">Technology</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <h1>Practical-9</h1>
+        </div>
+        <div class="team" id="team">
+            <p id="text">Team Members</p>
+            <div class="circle"><img src="../images/pic1.png" alt=""></div>
+            <div class="circle"><img src="../images/pic2.png" alt=""></div>
+            <div class="circle"><img src="../images/pic3.png" alt=""></div>
+            <div class="circle"><img src="../images/pic4.png" alt=""></div>
+        </div>
+        <div class="about" id="about">
+            <p id="text">About Us</p>
+            <div class="mainContent">
+                <h3>About Projects</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto animi voluptatem delectus placeat saepe voluptatibus voluptates molestiae nesciunt cupiditate dolores voluptate facilis iure, id nisi esse, nemo natus, quos dolor a repudiandae. Magnam, labore laborum! Quas rem, laudantium consequatur vero dignissimos saepe corrupti cupiditate porro veritatis et suscipit in eaque ad. Aspernatur corrupti neque reiciendis provident qui nihil eius veniam nemo ratione ad odit sapiente, placeat sequi non dicta ducimus error maxime! Neque in dolorum repellat laudantium modi sed quis iure sapiente reiciendis. Quo, nisi! Aperiam ab unde dignissimos maxime possimus recusandae ea at doloribus, nihil, veniam voluptatem! Vitae architecto minus error reiciendis iure consequatur mollitia doloribus vero dicta saepe vel recusandae, laboriosam laudantium non quibusdam quod nisi deserunt cupiditate fugiat consequuntur eveniet aspernatur! A aliquam ullam perspiciatis nesciunt at pariatur, enim cum quis ipsum, reiciendis porro! Esse eaque beatae porro architecto accusantium sapiente, veritatis, suscipit placeat incidunt voluptas laboriosam nisi officiis. Quaerat repudiandae at a laudantium doloremque esse. Fuga et aspernatur voluptas nisi quo labore nobis dolorum qui ea vel sint deleniti laborum sed maxime nostrum at voluptatem aliquid, voluptatibus atque iusto blanditiis eum? Maxime beatae velit obcaecati ipsam, perspiciatis at blanditiis ab quis, a ipsa excepturi quod. Molestias culpa quisquam officiis, cum magni omnis dolores asperiores consectetur, iusto eos veritatis molestiae, atque numquam reiciendis repudiandae? At saepe temporibus voluptas, expedita delectus rem quam qui atque! Minima mollitia nostrum a repellendus, consequatur dolor accusamus voluptas eligendi illo nihil cum dolore quisquam maiores deserunt et amet quod magni, fugiat sunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos magnam provident tenetur laudantium explicabo veritatis excepturi, fugit quidem eaque natus animi saepe.</p>
+            </div>
+            <div class="artical">
+                <div id="block1"><h2>Project-1</h2></div>
+                <div id="block2"><h2>Project-2</h2></div>
+                <div id="block3"><h2>Project-3</h2></div>
+            </div>   
+        </div>
+        <div class="tech" id="tech">
+            <p id="text">Technologies Used</p>
+            <div class="box" id="first"> <img id="boxImg" src="../images/html_512x287.png" alt="Html_image"> <h3>  Introduction to HTML </h3><br> <p id="boxText">Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser.HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p> <a id="boxLink" href="Assignment-5_html.html" target="_blank">Read More</a> </div>
+            <div class="box" id="sec"><img id="boxImg" src="../images/css.png" alt="CSS_image">
+                <h3>  Introduction to CSS </h3><br><p id="boxText">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.CSS is a cornerstone technology of the World Wide Web, alongside HTML .</p> <a id="boxLink" href="Assignment-5_css.html" target="_blank">Read More</a></div>
+            <div class="box" id="third"><img id="boxImg" src="../images/javascript.jpg" alt="javascript">
+                <h3>  Introduction to Javascript </h3><br> <p id="boxText">JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.Alongside HTML, CSS and JavaScript </p><a id="boxLink" href="Assignment-5_js.html"target="_blank">Read More</a> </div>
+            <div class="box" id ="fourth"><img id="boxImg" src="../images/bootstrap_512x287.png" alt="bootstrap">
+                <h3>  Introduction to bootstrap </h3> <br> <p id="boxText">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation .</p> <a id="boxLink" href="Assignment-5_boot.html"target="_blank">Read More</a> </div>
+        </div>
+        <div class="contact" id="contact">
+            <p id="text">Contact</p>
+            <div id="footer">
+                <p>Website template for Practical-8 &copy; <a href="tel: 7300743233">Call Me</a> </p> 
+                <a href="https://www.instagram.com/mayank.goyal_/" target="_blank"><img src="../images/instaIcon2.png" alt="Instagram"></a> 
+                <a href="mailto: mayank.goyal_cs18@gla.ac.in" ><img src="../images/mailIcon.png" alt=""></a><br>
+                <a href="#top">Back to Top</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
