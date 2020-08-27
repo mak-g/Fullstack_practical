@@ -667,12 +667,8 @@
                 padding:100px 0px;
                 transition: 1s;
             }
-            #chk:checked ~ .menu{
-                right: 0;  
-            }
-            .menu li a::after ~ .menu{
-                right: -100%;
-            }
+            
+            
             .header .menu li{
                 display: block;
             }
@@ -684,6 +680,9 @@
                 position: absolute;
                 right:30px;
                 top :10px;
+            }
+            #chk:checked ~ .menu{
+                right: 0;  
             }
 
 
@@ -846,12 +845,14 @@
             <label for="chk" class="show-btn">
                 <i class="fa fa-bars" ></i>
             </label>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#tech">Technology</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="menu" id="menu">
+                
+                <li><a href="#">     Home      </a></li>
+                <li><a href="#about">   About Us  </a></li>
+                <li><a href="#team">    Team      </a></li>
+                <li><a href="#tech">    Technology</a></li>
+                <li><a href="#contact"> Contact   </a></li>
+                
                 <label for="chk" class="hide-btn">
                     <i class="fa fa-times" ></i>
                 </label>
