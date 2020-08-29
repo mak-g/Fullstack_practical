@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-10</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        
+        .header{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            height: 80px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header h1{
+            color: white;
+            line-height: 80px;
+        }
+       
+        .header img{
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .content{
+            width: 100%;
+            margin-top: 80px;
+            padding: 20px;
+            transition: .7s;
+            float: right;
+        }
+        .content img {
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            margin: auto; 
+        }
+        .content p{
+            text-align: justify;
+            padding: 20px 20px;
+        }
+        .sidebar{
+            position: fixed;
+            top: 80px;
+            height: 100vh;
+            width: 20%;
+            background-color: black;
+            left: -100%;
+            transition: .7s;
+        }
+        .sidebar ul{
+            list-style: none;
+        }
+        .sidebar ul li{
+            border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+        }
+        .sidebar ul li a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 20px 10px;
+            transition: .3s;
+        }
+        .sidebar ul li a i{
+            margin-right: 10px;
+        }
+        .sidebar ul li a:hover{
+            border-left: 10px solid whitesmoke;
+        }
+        .social{
+            margin-top: 160px;
+            padding: 5px 0px;
+            font-size: 30px;
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+            border-top: 2px solid rgba(255, 255, 255, 0.9);
+        }
+        .social a i{
+            color: white;
+        }
+        .social a i:hover{
+            transform: scale(1.5);
+        }
+        .show-btn, .hide-btn{
+            color: whitesmoke;
+            font-size: 30px;
+            position: fixed;
+            line-height: 80px;
+            left: 20px;
+            top: 0;
+
+        }
+        #chk{
+            visibility: hidden;
+        }
+        .hide-btn{
+            opacity: 0;
+        }
+        #chk:checked~.sidebar{
+            left: 0;
+        }
+        #chk:checked~.show-btn{
+            opacity: 0;
+        }
+        #chk:checked~.hide-btn{
+            opacity: 1; 
+            transition: 1s;
+        }
+        #chk:checked~.content{
+            width: 80%;
+        }
+        
+        @media(max-width: 768px){
+            .sidebar{
+                text-align: center;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="header">
+            <img src="../images/pokeball-png-45330.png" alt="">
+            <h1>Pokemon</h1>
+        </div>
+        
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-btn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label for="chk" class="hide-btn">
+            <i class="fa fa-times"></i>
+        </label>
+        <div class="sidebar">
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#"><i class="fa fa-caret-square-o-right"></i>Episodes</a></li>
+                <li><a href="#"><i class="fa fa-address-card-o"></i>Pokedex</a></li>
+                <li><a href="#"><i class="fa fa-mobile"></i>Contact Us</a></li>
+            </ul>
+            <div class="social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="content">
+            <img src="../images/pokemon.jpg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus enim eligendi dignissimos eum excepturi maxime quas delectus voluptas itaque quisquam? Temporibus et tempora error optio eos quos quae natus id nemo soluta, iure iste distinctio rem quia dicta beatae voluptatibus architecto illo sapiente pariatur. Necessitatibus fuga, in adipisci perferendis temporibus fugit laborum laudantium, inventore beatae vel assumenda ad voluptatibus accusantium vitae officiis dolore velit. Reprehenderit beatae corporis eligendi unde aut? Quo inventore earum adipisci illum ratione iure alias hic ullam officiis quidem! Esse eveniet consequuntur illo error aut quia totam? Nobis quaerat saepe itaque dolores odio minus. Debitis quae a obcaecati modi ipsum omnis nihil aliquam dolorum dolore soluta nisi, officiis repellendus suscipit corporis eum mollitia tempore iusto corrupti maxime consectetur. Id consequuntur cum totam possimus tenetur quia, eveniet soluta voluptates doloribus placeat, nihil cupiditate! Enim consectetur dolores libero. Ad magnam, facilis dicta distinctio quae soluta vel voluptates. Cumque, architecto explicabo! Ipsa sint enim voluptate aspernatur, nihil quia natus accusantium aliquid porro fugit officiis ab animi quis, perferendis odio inventore explicabo? Dignissimos iusto illum at recusandae, doloribus aspernatur et vitae! Reiciendis quaerat necessitatibus excepturi nulla voluptatum? Culpa id, hic, omnis sed distinctio in reiciendis inventore odio nesciunt debitis temporibus consectetur dolor. Quo, libero nobis! Laudantium necessitatibus consequatur eos recusandae quasi non voluptas dicta deleniti ab, odit minima quas voluptates natus esse veniam adipisci! Blanditiis vel alias id earum? Dolorem explicabo repellendus perferendis animi omnis odit asperiores quo? Sequi optio ipsa veritatis distinctio autem aut voluptate, laboriosam odit ea deleniti reiciendis nihil laborum dicta libero quod atque doloribus. Voluptate, ex consequatur in laboriosam ea molestias molestiae quidem alias accusamus accusantium animi. Aperiam dolores velit ut facere esse et eos odit illum voluptate dolore, unde quidem necessitatibus nam molestiae voluptas tempora quibusdam deleniti similique tenetur atque. Omnis veniam exercitationem perferendis, libero, aut aliquam eaque laboriosam quae ut culpa quaerat repudiandae odio aperiam eum vitae facilis repellat, quis quos repellendus iste nemo. Dolor perspiciatis cumque soluta exercitationem? Dolorem quidem ratione vero inventore voluptatem illum sint magni enim exercitationem id cupiditate facilis reiciendis totam pariatur labore possimus nostrum, at dignissimos! Doloribus nihil officia voluptas ab aliquam asperiores quod, tempora explicabo, ex laborum laudantium rem atque reiciendis ipsum corporis cum quae. Sed, sint illo magni temporibus veniam itaque, debitis aspernatur nihil officia obcaecati tempore alias. Facilis possimus natus exercitationem! Incidunt tenetur eaque tempora neque, maiores dolore culpa aliquam expedita non ratione adipisci voluptates minima! Error, assumenda corrupti distinctio explicabo ducimus debitis? Voluptate, quas maxime! Commodi, laborum vero magni maiores ipsam qui, accusantium voluptatem, ut eaque excepturi ad in facere vel. Optio ipsa, iste sit velit laborum fugit vitae asperiores odio reprehenderit quo suscipit magni voluptatum ex! Perspiciatis amet, eaque nam quibusdam mollitia aperiam distinctio? Dolor nisi amet doloribus. Est magni dicta quaerat! Quidem officiis maxime tempora, sit quam provident laborum reprehenderit facilis recusandae nihil totam deleniti illum facere. Nam ab consequuntur suscipit mollitia tempora, quia magni vel voluptatibus similique doloribus aliquam exercitationem eos earum iure, ut, velit molestiae maiores. Facilis nihil cupiditate eveniet unde debitis.</p>
+        </div>
+        
+        
+    
+</body>
+</html>
