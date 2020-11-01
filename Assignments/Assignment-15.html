@@ -52,13 +52,14 @@
         if (count == 10) {
           document.getElementById("plus").disabled = true;
         }
-        if (count > 0) {
-          document.getElementById("minus").disabled = "false";
-        }
       };
       document.getElementById("minus").onclick = function () {
+        document.getElementById("plus").disabled = false;
         count = count - 1;
         document.getElementById("number").innerHTML = count;
+        if (count == 0) {
+          document.getElementById("minus").disabled = true;
+        }
       };
     </script>
   </body>
