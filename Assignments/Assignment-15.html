@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-15</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          to right,
+          lightskyblue,
+          deepskyblue,
+          black
+        );
+      }
+      #number {
+        color: black;
+        font-size: 60px;
+      }
+      .butt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+        font-size: 70px;
+      }
+      button {
+        font-size: 50px;
+        width: 60px;
+        background-color: red;
+        margin: 0px 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>COUNTER</h1>
+    <div class="butt">
+      <button id="minus">-</button>
+      <div id="number">0</div>
+      <button id="plus">+</button>
+    </div>
+    <script>
+      var count = 0;
+      document.getElementById("minus").disabled = true;
+      document.getElementById("plus").onclick = function () {
+        document.getElementById("minus").disabled = false;
+        count = count + 1;
+        document.getElementById("number").innerHTML = count;
+        if (count == 10) {
+          document.getElementById("plus").disabled = true;
+        }
+        if (count > 0) {
+          document.getElementById("minus").disabled = "false";
+        }
+      };
+      document.getElementById("minus").onclick = function () {
+        count = count - 1;
+        document.getElementById("number").innerHTML = count;
+      };
+    </script>
+  </body>
+</html>
