@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: cover;
+}
+#time {
+  font-size: 100px;
+}
+#greeting {
+  font-size: 40px;
+  margin: 0px 0px 25px 0px;
+}
+#name {
+  opacity: 0.6;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+#day {
+  font-size: 30px;
+}
