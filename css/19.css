@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: lightpink;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: white;
+  width: 350px;
+  height: 400px;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.container form {
+  position: absolute;
+  top: 70px;
+  width: 280px;
+  transition: 0.5s;
+}
+form input {
+  width: 100%;
+  padding: 5px 5px;
+  margin: 12px 0px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid darkgrey;
+}
+form h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: slategrey;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn button {
+  font-size: 20px;
+  padding: 7px;
+  width: 120px;
+  border-radius: 5px;
+  margin-top: 40px;
+  border: none;
+  color: white;
+  outline: none;
+  text-transform: uppercase;
+  background-color: crimson;
+}
+
+.btn button:hover {
+  cursor: pointer;
+}
+#form2 {
+  left: 450px;
+}
+#form3 {
+  left: 450px;
+}
+#form2 button,
+#form3 button {
+  margin-right: 10px;
+}
+.step-row {
+  width: 350px;
+  position: absolute;
+  top: 0px;
+  height: 40px;
+  box-shadow: 0px -1px 5px -1px black;
+  display: flex;
+  align-items: center;
+  border-radius: 8px 8px 0px 0px;
+}
+.step-col {
+  width: 117px;
+  text-align: center;
+  z-index: 1;
+  font-weight: bold;
+}
+#progress {
+  width: 117px;
+  height: 100%;
+  position: absolute;
+  background-color: crimson;
+  border-radius: 8px 0px 0px 0px;
+  transition: 0.5s;
+}
+#progress::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  right: -20px;
+  top: 0px;
+  border-left: 20px solid crimson;
+}
