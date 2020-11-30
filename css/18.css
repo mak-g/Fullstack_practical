@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: darkslateblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  /* height: 500px; */
+  width: 380px;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.header {
+  background-color: #f7f7f7;
+}
+.header h1 {
+  padding: 20px;
+  text-align: center;
+}
+.form {
+  padding: 20px 20px;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  position: relative;
+}
+.form-control label {
+  display: block;
+}
+.form-control input {
+  display: block;
+  margin: 2px 0px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid lightgray;
+  outline: none;
+  border-radius: 5px;
+}
+.form-control i {
+  position: absolute;
+  right: 10px;
+  top: 31px;
+  font-size: 25px;
+  visibility: hidden;
+}
+#submit {
+  background-color: darkslateblue;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  padding: 9px;
+  border-radius: 5px;
+}
+#submit:hover {
+  background-color: black;
+  cursor: pointer;
+}
+.form-control small {
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+}
+.form-control.success input {
+  border-color: rgb(59, 250, 59);
+}
+.form-control.success .fa-check-circle {
+  visibility: visible;
+  color: rgb(59, 250, 59);
+}
+.form-control.error input {
+  border-color: red;
+}
+.form-control.error .fa-exclamation-circle {
+  visibility: visible;
+  color: red;
+}
+.form-control.error small {
+  visibility: visible;
+  color: red;
+}
